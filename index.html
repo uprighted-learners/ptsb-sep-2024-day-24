@@ -7,7 +7,46 @@
     <title>Online Ordering Form</title>
   </head>
   <body>
-    <h1>hello team</h1>
+    <div class="order-container">
+      <h1>Welcome to Our Diner</h1>
+
+      <form id="order-form">
+        <h2>Place Your Order</h2>
+        <!-- Menu Items -->
+        <label for="burger">Burger $5 each: </label>
+        <input type="number" id="burger" name="burger" value="0" min="0" />
+        <br />
+        <label for="fries">Fries $3 each:</label>
+        <input type="number" id="fries" name="fries" value="0" min="0" />
+        <br />
+        <label for="drinks">Drinks $2 each</label>
+        <input type="number" name="drinks" id="drinks" value="0" min="0" />
+        <br />
+
+        <!-- Delivery Option -->
+        <label>
+          <input
+            type="radio"
+            id="delivery"
+            name="delivery"
+            value="pickup"
+            checked
+          />
+          Pickup
+        </label>
+
+        <label>
+          <input type="radio" id="delivery" name="delivery" value="delivery" />
+          Delivery
+        </label>
+
+        <!-- Submit or Reset -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <!-- Summary -->
+      <div id="summary"></div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
